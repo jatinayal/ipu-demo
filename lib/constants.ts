@@ -4,6 +4,7 @@ export const NAV_LINKS = [
   { name: "Campus Life", href: "/campus-life" },
   { name: "Admission", href: "/admissions" },
   { name: "News", href: "/news" },
+  { name: "Explore Programs", href: "/programs" },
   { name: "Contact Us", href: "/contact" },
 ];
 
@@ -367,5 +368,110 @@ export const GGSIPU_CONTACTS = [
     phone: "+91-11-25302170, +91-11-25302171",
     fax: "",
     email: "pro@ipu.ac.in",
+  }
+];
+
+export const GGSIPU_PROGRAMS = [
+  {
+    id: "btech-cse",
+    name: "B.Tech (Computer Science & Engineering)",
+    degreeType: "UG",
+    duration: "4 Years",
+    stream: "Engineering",
+    description: "A comprehensive undergraduate program focusing on computer science principles, software development, and modern technologies.",
+    department: "University School of Information, Communication & Technology (USICT)",
+    tags: ["Popular", "High Placement"],
+    fees: [
+      { label: "Tuition Fee (Per Annum)", year1: "₹ 1,17,000", year2: "₹ 1,17,000" },
+      { label: "University Charges", year1: "₹ 20,000", year2: "₹ 20,000" },
+      { label: "Alumni Fund (One Time)", year1: "₹ 2,000", year2: "-" },
+      { label: "Security Deposit (Refundable)", year1: "₹ 10,000", year2: "-" },
+      { label: "Total", year1: "₹ 1,49,000", year2: "₹ 1,37,000" }
+    ]
+  },
+  {
+    id: "mca",
+    name: "Master of Computer Applications (MCA)",
+    degreeType: "PG",
+    duration: "2 Years",
+    stream: "IT",
+    description: "An advanced postgraduate degree designed to produce top-tier software professionals and IT architects.",
+    department: "University School of Information, Communication & Technology (USICT)",
+    tags: ["Top Ranked"],
+    fees: [
+      { label: "Tuition Fee (Per Annum)", year1: "₹ 1,00,000", year2: "₹ 1,00,000" },
+      { label: "University Charges", year1: "₹ 20,000", year2: "₹ 20,000" },
+      { label: "Alumni Fund (One Time)", year1: "₹ 2,000", year2: "-" },
+      { label: "Security Deposit (Refundable)", year1: "₹ 10,000", year2: "-" },
+      { label: "Total", year1: "₹ 1,32,000", year2: "₹ 1,20,000" }
+    ]
+  },
+  {
+    id: "mba",
+    name: "Master of Business Administration (MBA)",
+    degreeType: "PG",
+    duration: "2 Years",
+    stream: "Management",
+    description: "Equips students with cutting-edge leadership, analytical, and operational skills required in global business environments.",
+    department: "University School of Management Studies (USMS)",
+    tags: ["High Placement", "Industry Integrated"],
+    fees: [
+      { label: "Tuition Fee (Per Annum)", year1: "₹ 1,25,000", year2: "₹ 1,25,000" },
+      { label: "University Charges", year1: "₹ 20,000", year2: "₹ 20,000" },
+      { label: "Alumni Fund (One Time)", year1: "₹ 2,000", year2: "-" },
+      { label: "Security Deposit (Refundable)", year1: "₹ 10,000", year2: "-" },
+      { label: "Total", year1: "₹ 1,57,000", year2: "₹ 1,45,000" }
+    ]
+  },
+  {
+    id: "ballb",
+    name: "B.A. LL.B. (Hons.)",
+    degreeType: "UG",
+    duration: "5 Years",
+    stream: "Law",
+    description: "A prestigious five-year integrated program delivering rigorous legal education combined with humanities subjects.",
+    department: "University School of Law & Legal Studies (USLLS)",
+    tags: ["Integrated"],
+    fees: [
+      { label: "Tuition Fee (Per Annum)", year1: "₹ 80,000", year2: "₹ 80,000" },
+      { label: "University Charges", year1: "₹ 20,000", year2: "₹ 20,000" },
+      { label: "Alumni Fund (One Time)", year1: "₹ 2,000", year2: "-" },
+      { label: "Security Deposit (Refundable)", year1: "₹ 10,000", year2: "-" },
+      { label: "Total", year1: "₹ 1,12,000", year2: "₹ 1,00,000" }
+    ]
+  },
+  {
+    id: "bjmc",
+    name: "Bachelor of Arts (Journalism & Mass Comm.)",
+    degreeType: "UG",
+    duration: "3 Years",
+    stream: "Media",
+    description: "Prepares students for dynamic careers in journalism, digital media, advertising, and public relations.",
+    department: "University School of Mass Communication (USMC)",
+    tags: ["Creative"],
+    fees: [
+      { label: "Tuition Fee (Per Annum)", year1: "₹ 75,000", year2: "₹ 75,000" },
+      { label: "University Charges", year1: "₹ 20,000", year2: "₹ 20,000" },
+      { label: "Alumni Fund (One Time)", year1: "₹ 2,000", year2: "-" },
+      { label: "Security Deposit (Refundable)", year1: "₹ 10,000", year2: "-" },
+      { label: "Total", year1: "₹ 1,07,000", year2: "₹ 95,000" }
+    ]
+  },
+  {
+    id: "phd-it",
+    name: "Ph.D in Information Technology",
+    degreeType: "PhD",
+    duration: "3-5 Years",
+    stream: "IT",
+    description: "Advanced doctoral research program emphasizing novel discoveries in computing, AI, and information systems.",
+    department: "University School of Information, Communication & Technology (USICT)",
+    tags: ["Research", "Funding Available"],
+    fees: [
+      { label: "Tuition Fee (Per Annum)", year1: "₹ 35,000", year2: "₹ 35,000" },
+      { label: "University Charges", year1: "₹ 20,000", year2: "₹ 20,000" },
+      { label: "Alumni Fund (One Time)", year1: "₹ 2,000", year2: "-" },
+      { label: "Security Deposit (Refundable)", year1: "₹ 10,000", year2: "-" },
+      { label: "Total", year1: "₹ 67,000", year2: "₹ 55,000" }
+    ]
   }
 ];
