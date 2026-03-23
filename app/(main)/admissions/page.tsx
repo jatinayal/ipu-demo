@@ -73,14 +73,14 @@ interface AdmissionBlockProps {
 
 function AdmissionBlock({ title, description, image, links, isReversed = false, theme = "light" }: AdmissionBlockProps) {
   const isDark = theme === "dark";
-  
+
   return (
     <section className={cn("relative w-full overflow-hidden", isDark ? "bg-slate-900 py-16 md:py-24" : "py-16 md:py-32")}>
       <div className="max-w-[1500px] mx-auto px-4 md:px-8 relative grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-0">
-        
+
         {/* Light Theme Gray Blade Background (Desktop only) */}
         {!isDark && (
-          <div 
+          <div
             className={cn(
               "hidden md:block absolute top-0 bottom-0 bg-[#E1F5FE] z-0",
               isReversed ? "left-0 right-[40%]" : "right-0 left-[40%]"
@@ -108,15 +108,15 @@ function AdmissionBlock({ title, description, image, links, isReversed = false, 
             </p>
             <div className="flex flex-col space-y-5">
               {links.map((link, idx) => (
-                <Link 
-                  key={idx} 
+                <Link
+                  key={idx}
                   href={link.href}
                   className={cn(
                     "group flex items-center font-bold tracking-widest uppercase hover:underline underline-offset-4 decoration-[1.5px] text-sm md:text-base w-fit",
                     isDark ? "text-white decoration-white/50" : "text-[#002147]"
                   )}
                 >
-                  {link.label} 
+                  {link.label}
                   <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               ))}
@@ -131,7 +131,7 @@ function AdmissionBlock({ title, description, image, links, isReversed = false, 
           isReversed ? "md:order-1" : "md:order-2"
         )}>
           <FadeInView delay={0.2} className="w-full h-full">
-            <div 
+            <div
               className="w-full h-full bg-cover bg-center transition-transform duration-[2s] hover:scale-105"
               style={{ backgroundImage: `url('${image}')` }}
             />
@@ -164,7 +164,7 @@ export default function AdmissionsPage() {
       <section className="w-full max-w-[1700px] mx-auto px-4 md:px-8 pb-32">
         <FadeInView delay={0.3}>
           <div className="w-full h-[50vh] md:h-[70vh] relative bg-slate-100 group overflow-hidden">
-            <div 
+            <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-[3s] group-hover:scale-105"
               style={{ backgroundImage: `url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2560&auto=format&fit=crop')` }}
             />
@@ -184,12 +184,12 @@ export default function AdmissionsPage() {
       </SectionWrapper>
 
       {/* Pathways - Offset Alternate Blocks */}
-      
+
       {/* 1. Undergraduate (Light Theme, Text Left) */}
-      <AdmissionBlock 
+      <AdmissionBlock
         title="Undergraduate Admission"
         description="We evaluate every applicant holistically. We look beyond numbers to understand your drive, your engagement with the world around you, and the unique perspective you will bring to our community."
-        image="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop"
+        image="https://www.stanford.edu/wp-content/uploads/2025/05/20240917_NSO_Convocation_95A5323.jpg"
         links={[
           { label: "Our Selection Process", href: "#" },
           { label: "Application Deadlines", href: "#" },
@@ -199,10 +199,10 @@ export default function AdmissionsPage() {
       />
 
       {/* 2. Graduate (Dark Theme, Image Left, Text Right) */}
-      <AdmissionBlock 
+      <AdmissionBlock
         title="Graduate Admission"
         description="Each of our seven schools manages its own admissions process. We seek candidates ready to plunge into deep, interdisciplinary research and emerge as leaders who redefine their fields."
-        image="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop"
+        image="https://www.stanford.edu/wp-content/uploads/2022/04/grad2-2048x1365.jpg"
         isReversed={true}
         theme="dark"
         links={[

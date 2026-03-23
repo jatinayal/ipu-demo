@@ -73,9 +73,9 @@ function OffsetBlock({ title, description, image, links, isReversed = false }: O
   return (
     <section className="relative w-full py-16 md:py-24 overflow-hidden">
       <div className="max-w-[1500px] mx-auto px-4 md:px-8 relative grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-0">
-        
+
         {/* The Light Gray Blade Background (Desktop only) */}
-        <div 
+        <div
           className={cn(
             "hidden md:block absolute top-0 bottom-0 bg-[#E1F5FE] z-0",
             isReversed ? "left-0 right-[40%]" : "right-0 left-[40%]"
@@ -100,12 +100,12 @@ function OffsetBlock({ title, description, image, links, isReversed = false }: O
             </p>
             <div className="flex flex-col space-y-4">
               {links.map((link, idx) => (
-                <Link 
-                  key={idx} 
+                <Link
+                  key={idx}
                   href={link.href}
                   className="group flex items-center text-[#002147] font-bold tracking-widest uppercase hover:underline underline-offset-4 decoration-[1.5px] text-sm md:text-base w-fit"
                 >
-                  {link.label} 
+                  {link.label}
                   <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               ))}
@@ -120,7 +120,7 @@ function OffsetBlock({ title, description, image, links, isReversed = false }: O
           isReversed ? "md:order-1" : "md:order-2"
         )}>
           <FadeInView delay={0.2} className="w-full h-full">
-            <div 
+            <div
               className="w-full h-full bg-cover bg-center"
               style={{ backgroundImage: `url('${image}')` }}
             />
@@ -153,7 +153,7 @@ export default function AcademicsPage() {
       <section className="w-full max-w-[1700px] mx-auto px-4 md:px-8 pb-32">
         <FadeInView delay={0.3}>
           <div className="w-full h-[50vh] md:h-[70vh] relative bg-slate-100">
-            <div 
+            <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2670&auto=format&fit=crop')` }}
             />
@@ -173,12 +173,12 @@ export default function AcademicsPage() {
       </SectionWrapper>
 
       {/* Pathways - Offset Alternate Blocks */}
-      
+
       {/* 1. Undergraduate */}
-      <OffsetBlock 
+      <OffsetBlock
         title="Undergraduate Studies"
         description="Our undergraduate programs offer a broad, deeply engaging liberal arts foundation paired with unparalleled access to top-tier research faculty. Discover over 65 major fields of study designed to adapt to a changing world."
-        image="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop"
+        image="https://www.stanford.edu/wp-content/uploads/2023/05/20230418_Grayson_Armour_95A0681-2.jpg"
         links={[
           { label: "Majors & Minors", href: "#" },
           { label: "Introductory Seminars", href: "#" },
@@ -187,10 +187,10 @@ export default function AcademicsPage() {
       />
 
       {/* 2. Graduate (Reversed) */}
-      <OffsetBlock 
+      <OffsetBlock
         title="Graduate Studies"
         description="GGSIPU graduate students work shoulder-to-shoulder with pioneers in their fields. With access to heavily interdisciplinary institutes, our master's and doctoral candidates continually drive global academic paradigms forward."
-        image="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop"
+        image="https://www.stanford.edu/wp-content/uploads/2025/05/20240206_Blue_food_policy_lab_N6A0064.jpg"
         isReversed={true}
         links={[
           { label: "Graduate Programs", href: "#" },
@@ -200,7 +200,7 @@ export default function AcademicsPage() {
       />
 
       {/* 3. Lifelong Learning */}
-      <OffsetBlock 
+      <OffsetBlock
         title="Lifelong Learning"
         description="Education does not stop at graduation. We offer extensive continuing education, professional certificates, and pre-college programs tailored for executives, adult learners, and high school students across the globe."
         image="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2670&auto=format&fit=crop"

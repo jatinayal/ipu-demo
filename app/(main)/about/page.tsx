@@ -109,7 +109,7 @@ export default function AboutPage() {
       <ZBlock
         title="Our Identity & Mission"
         content="Our mission is to expand human knowledge and educate students for a life of purpose, leadership, and service. We believe deeply in the power of an open, inclusive, and diverse community to drive innovation and create a better world for all."
-        imageUrl="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2670&auto=format&fit=crop"
+        imageUrl="https://www.stanford.edu/wp-content/uploads/2025/05/20250122_SSC-8.jpg"
         imageAlt="Students collaborating outdoors"
         isImageLeft={false}
         backgroundColor="gray"
@@ -118,7 +118,7 @@ export default function AboutPage() {
       <ZBlock
         title="Academic Excellence"
         content="Seven schools, one collaborative campus. Our unique academic structure encourages students to cross boundaries and explore diverse disciplines. A liberal arts foundation combined with cutting-edge research opportunities ensures a transformative educational journey."
-        imageUrl="https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=2670&auto=format&fit=crop"
+        imageUrl="https://www.stanford.edu/wp-content/uploads/2025/01/20230308Citizenship_Pam_Karlan_95A0787.jpg"
         imageAlt="Lecture hall taking notes"
         isImageLeft={true}
         backgroundColor="white"
